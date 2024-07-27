@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <listeners>
+<listener class-name="com.utils.ExtentReportListener"></listener>
+</listeners>
+ 
+
+    <parameter name="browser" value="chrome" />  <!-- browser option values "chrome" or "edge" or "firefox" -->
+  
+  <test  name="Log in from user role. (Use Correct username and correct password)">
+    
+    <classes>
+      <class name="com.Login.Testcases.ValidLogin"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
